@@ -1,0 +1,343 @@
+import type { Product, Category } from '@/types';
+
+export const categories: Category[] = [
+  {
+    id: 'cat-1',
+    name: 'Electronics',
+    slug: 'electronics',
+    description: 'Latest gadgets and electronic devices',
+    image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400',
+  },
+  {
+    id: 'cat-2',
+    name: 'Clothing',
+    slug: 'clothing',
+    description: 'Fashion and apparel for everyone',
+    image: 'https://images.unsplash.com/photo-1445205170230-053b83016050?w=400',
+  },
+  {
+    id: 'cat-3',
+    name: 'Home & Living',
+    slug: 'home-living',
+    description: 'Everything for your home',
+    image: 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=400',
+  },
+  {
+    id: 'cat-4',
+    name: 'Sports & Outdoors',
+    slug: 'sports-outdoors',
+    description: 'Gear for active lifestyles',
+    image: 'https://images.unsplash.com/photo-1461896836934- voices?w=400',
+  },
+  {
+    id: 'cat-5',
+    name: 'Books',
+    slug: 'books',
+    description: 'Books for every reader',
+    image: 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=400',
+  },
+];
+
+export const products: Product[] = [
+  {
+    id: 'prod-1',
+    name: 'Wireless Bluetooth Headphones',
+    slug: 'wireless-bluetooth-headphones',
+    description: 'Premium wireless headphones with active noise cancellation, 30-hour battery life, and crystal-clear audio quality. Features comfortable over-ear design with memory foam cushions.',
+    shortDescription: 'Premium wireless headphones with ANC',
+    price: 199.99,
+    compareAtPrice: 249.99,
+    images: [
+      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800',
+      'https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800',
+    ],
+    category: categories[0],
+    categoryId: 'cat-1',
+    tags: ['wireless', 'bluetooth', 'noise-cancelling'],
+    sku: 'WBH-001',
+    stock: 50,
+    featured: true,
+    rating: 4.8,
+    reviewCount: 124,
+    createdAt: '2024-01-15T10:00:00Z',
+    updatedAt: '2024-01-20T15:30:00Z',
+  },
+  {
+    id: 'prod-2',
+    name: 'Smart Watch Pro',
+    slug: 'smart-watch-pro',
+    description: 'Advanced smartwatch with health monitoring, GPS tracking, and seamless smartphone integration. Water-resistant up to 50 meters with a stunning AMOLED display.',
+    shortDescription: 'Advanced smartwatch with health monitoring',
+    price: 349.99,
+    compareAtPrice: 399.99,
+    images: [
+      'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800',
+      'https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800',
+    ],
+    category: categories[0],
+    categoryId: 'cat-1',
+    tags: ['smartwatch', 'fitness', 'health'],
+    sku: 'SWP-001',
+    stock: 30,
+    featured: true,
+    rating: 4.6,
+    reviewCount: 89,
+    createdAt: '2024-01-10T08:00:00Z',
+    updatedAt: '2024-01-18T12:00:00Z',
+  },
+  {
+    id: 'prod-3',
+    name: 'Casual Cotton T-Shirt',
+    slug: 'casual-cotton-tshirt',
+    description: 'Comfortable 100% organic cotton t-shirt perfect for everyday wear. Pre-shrunk fabric with reinforced stitching for durability.',
+    shortDescription: '100% organic cotton casual t-shirt',
+    price: 29.99,
+    images: [
+      'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800',
+      'https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=800',
+    ],
+    category: categories[1],
+    categoryId: 'cat-2',
+    tags: ['cotton', 'casual', 'organic'],
+    sku: 'CCT-001',
+    stock: 200,
+    featured: false,
+    rating: 4.5,
+    reviewCount: 256,
+    createdAt: '2024-01-05T09:00:00Z',
+    updatedAt: '2024-01-15T11:00:00Z',
+  },
+  {
+    id: 'prod-4',
+    name: 'Premium Denim Jeans',
+    slug: 'premium-denim-jeans',
+    description: 'Classic fit premium denim jeans with slight stretch for comfort. Made from sustainable materials with attention to detail in every stitch.',
+    shortDescription: 'Classic fit premium denim jeans',
+    price: 89.99,
+    compareAtPrice: 119.99,
+    images: [
+      'https://images.unsplash.com/photo-1542272604-787c3835535d?w=800',
+      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800',
+    ],
+    category: categories[1],
+    categoryId: 'cat-2',
+    tags: ['denim', 'premium', 'sustainable'],
+    sku: 'PDJ-001',
+    stock: 75,
+    featured: true,
+    rating: 4.7,
+    reviewCount: 178,
+    createdAt: '2024-01-08T14:00:00Z',
+    updatedAt: '2024-01-19T16:00:00Z',
+  },
+  {
+    id: 'prod-5',
+    name: 'Minimalist Desk Lamp',
+    slug: 'minimalist-desk-lamp',
+    description: 'Modern LED desk lamp with adjustable brightness and color temperature. Sleek aluminum design that complements any workspace.',
+    shortDescription: 'Modern LED desk lamp with adjustable settings',
+    price: 79.99,
+    images: [
+      'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800',
+      'https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=800',
+    ],
+    category: categories[2],
+    categoryId: 'cat-3',
+    tags: ['led', 'desk', 'modern'],
+    sku: 'MDL-001',
+    stock: 45,
+    featured: false,
+    rating: 4.4,
+    reviewCount: 67,
+    createdAt: '2024-01-12T11:00:00Z',
+    updatedAt: '2024-01-17T13:00:00Z',
+  },
+  {
+    id: 'prod-6',
+    name: 'Ergonomic Office Chair',
+    slug: 'ergonomic-office-chair',
+    description: 'High-back ergonomic office chair with lumbar support, adjustable armrests, and breathable mesh back. Designed for all-day comfort.',
+    shortDescription: 'High-back ergonomic chair with lumbar support',
+    price: 299.99,
+    compareAtPrice: 399.99,
+    images: [
+      'https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=800',
+      'https://images.unsplash.com/photo-1589384267710-7a170981ca78?w=800',
+    ],
+    category: categories[2],
+    categoryId: 'cat-3',
+    tags: ['ergonomic', 'office', 'chair'],
+    sku: 'EOC-001',
+    stock: 25,
+    featured: true,
+    rating: 4.9,
+    reviewCount: 312,
+    createdAt: '2024-01-03T10:00:00Z',
+    updatedAt: '2024-01-20T09:00:00Z',
+  },
+  {
+    id: 'prod-7',
+    name: 'Yoga Mat Premium',
+    slug: 'yoga-mat-premium',
+    description: 'Extra thick eco-friendly yoga mat with superior grip and cushioning. Non-slip surface perfect for yoga, pilates, and floor exercises.',
+    shortDescription: 'Eco-friendly yoga mat with superior grip',
+    price: 49.99,
+    images: [
+      'https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=800',
+      'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800',
+    ],
+    category: categories[3],
+    categoryId: 'cat-4',
+    tags: ['yoga', 'fitness', 'eco-friendly'],
+    sku: 'YMP-001',
+    stock: 100,
+    featured: false,
+    rating: 4.6,
+    reviewCount: 198,
+    createdAt: '2024-01-07T08:00:00Z',
+    updatedAt: '2024-01-16T10:00:00Z',
+  },
+  {
+    id: 'prod-8',
+    name: 'Running Shoes Elite',
+    slug: 'running-shoes-elite',
+    description: 'Lightweight running shoes with responsive cushioning and breathable mesh upper. Engineered for speed and long-distance comfort.',
+    shortDescription: 'Lightweight running shoes with responsive cushioning',
+    price: 159.99,
+    compareAtPrice: 189.99,
+    images: [
+      'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800',
+      'https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=800',
+    ],
+    category: categories[3],
+    categoryId: 'cat-4',
+    tags: ['running', 'shoes', 'athletic'],
+    sku: 'RSE-001',
+    stock: 60,
+    featured: true,
+    rating: 4.8,
+    reviewCount: 245,
+    createdAt: '2024-01-09T12:00:00Z',
+    updatedAt: '2024-01-18T14:00:00Z',
+  },
+  {
+    id: 'prod-9',
+    name: 'Portable Bluetooth Speaker',
+    slug: 'portable-bluetooth-speaker',
+    description: 'Compact waterproof Bluetooth speaker with 360-degree sound. 20-hour battery life and built-in microphone for hands-free calls.',
+    shortDescription: 'Compact waterproof Bluetooth speaker',
+    price: 79.99,
+    compareAtPrice: 99.99,
+    images: [
+      'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=800',
+      'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800',
+    ],
+    category: categories[0],
+    categoryId: 'cat-1',
+    tags: ['bluetooth', 'speaker', 'portable'],
+    sku: 'PBS-001',
+    stock: 80,
+    featured: false,
+    rating: 4.5,
+    reviewCount: 156,
+    createdAt: '2024-01-11T09:00:00Z',
+    updatedAt: '2024-01-19T11:00:00Z',
+  },
+  {
+    id: 'prod-10',
+    name: 'Leather Messenger Bag',
+    slug: 'leather-messenger-bag',
+    description: 'Handcrafted genuine leather messenger bag with multiple compartments. Perfect for work or travel with padded laptop sleeve.',
+    shortDescription: 'Handcrafted genuine leather messenger bag',
+    price: 149.99,
+    images: [
+      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800',
+      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800',
+    ],
+    category: categories[1],
+    categoryId: 'cat-2',
+    tags: ['leather', 'bag', 'messenger'],
+    sku: 'LMB-001',
+    stock: 35,
+    featured: true,
+    rating: 4.7,
+    reviewCount: 89,
+    createdAt: '2024-01-06T15:00:00Z',
+    updatedAt: '2024-01-17T17:00:00Z',
+  },
+  {
+    id: 'prod-11',
+    name: 'Ceramic Plant Pot Set',
+    slug: 'ceramic-plant-pot-set',
+    description: 'Set of 3 minimalist ceramic plant pots with drainage holes and bamboo saucers. Perfect for succulents and small indoor plants.',
+    shortDescription: 'Set of 3 minimalist ceramic plant pots',
+    price: 39.99,
+    images: [
+      'https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800',
+      'https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=800',
+    ],
+    category: categories[2],
+    categoryId: 'cat-3',
+    tags: ['ceramic', 'plants', 'home-decor'],
+    sku: 'CPP-001',
+    stock: 120,
+    featured: false,
+    rating: 4.3,
+    reviewCount: 78,
+    createdAt: '2024-01-14T10:00:00Z',
+    updatedAt: '2024-01-20T12:00:00Z',
+  },
+  {
+    id: 'prod-12',
+    name: 'Stainless Steel Water Bottle',
+    slug: 'stainless-steel-water-bottle',
+    description: 'Double-wall vacuum insulated water bottle that keeps drinks cold for 24 hours or hot for 12 hours. BPA-free and eco-friendly.',
+    shortDescription: 'Vacuum insulated stainless steel bottle',
+    price: 34.99,
+    images: [
+      'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800',
+      'https://images.unsplash.com/photo-1523362628745-0c100150b504?w=800',
+    ],
+    category: categories[3],
+    categoryId: 'cat-4',
+    tags: ['water-bottle', 'stainless-steel', 'eco-friendly'],
+    sku: 'SWB-001',
+    stock: 150,
+    featured: false,
+    rating: 4.6,
+    reviewCount: 234,
+    createdAt: '2024-01-13T11:00:00Z',
+    updatedAt: '2024-01-19T13:00:00Z',
+  },
+];
+
+// Helper functions
+export function getProductBySlug(slug: string): Product | undefined {
+  return products.find((p) => p.slug === slug);
+}
+
+export function getProductById(id: string): Product | undefined {
+  return products.find((p) => p.id === id);
+}
+
+export function getProductsByCategory(categorySlug: string): Product[] {
+  return products.filter((p) => p.category.slug === categorySlug);
+}
+
+export function getFeaturedProducts(): Product[] {
+  return products.filter((p) => p.featured);
+}
+
+export function searchProducts(query: string): Product[] {
+  const lowerQuery = query.toLowerCase();
+  return products.filter(
+    (p) =>
+      p.name.toLowerCase().includes(lowerQuery) ||
+      p.description.toLowerCase().includes(lowerQuery) ||
+      p.tags.some((tag) => tag.toLowerCase().includes(lowerQuery))
+  );
+}
+
+export function getCategoryBySlug(slug: string): Category | undefined {
+  return categories.find((c) => c.slug === slug);
+}
