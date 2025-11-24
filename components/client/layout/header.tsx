@@ -9,7 +9,7 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/s
 import { VisuallyHidden } from '@/components/ui/visually-hidden';
 import { Badge } from '@/components/ui/badge';
 import { useCartStore } from '@/stores/cart-store';
-import { CartDrawer } from '@/components/cart/cart-drawer';
+import { CartDrawer } from '@/components/client/cart/cart-drawer';
 import { useRouter } from 'next/navigation';
 import { categories } from '@/data/products';
 

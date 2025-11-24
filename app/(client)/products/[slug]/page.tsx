@@ -11,9 +11,9 @@ import {
 } from '@/components/ui/breadcrumb';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
-import { ProductGallery } from '@/components/product/product-gallery';
-import { AddToCart } from '@/components/product/add-to-cart';
-import { ProductGrid } from '@/components/product/product-grid';
+import { ProductGallery } from '@/components/client/product/product-gallery';
+import { AddToCart } from '@/components/client/product/add-to-cart';
+import { ProductGrid } from '@/components/client/product/product-grid';
 import { getProductBySlug, products } from '@/data/products';
 import { formatPrice } from '@/lib/utils';
 

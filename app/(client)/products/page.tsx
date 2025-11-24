@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
-import { ProductFilters } from '@/components/product/product-filters';
-import { ProductGrid } from '@/components/product/product-grid';
+import { ProductFilters } from '@/components/client/product/product-filters';
+import { ProductGrid } from '@/components/client/product/product-grid';
 import { Skeleton } from '@/components/ui/skeleton';
 import {
   Breadcrumb,

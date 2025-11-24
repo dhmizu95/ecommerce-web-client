@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { ProductGrid } from '@/components/product/product-grid';
+import { ProductGrid } from '@/components/client/product/product-grid';
 import { getFeaturedProducts } from '@/data/products';
 
 export function FeaturedProducts() {
