@@ -22,8 +22,29 @@ This is a Next.js 16 e-commerce project using the App Router with React 19.
 ### Project Structure
 - `app/` - App Router pages and layouts
 - `app/layout.tsx` - Root layout with Geist font configuration
-- `app/page.tsx` - Home page
+- `app/(client)/` - Customer-facing storefront (route group)
+- `app/(admin)/admin/` - Admin dashboard (route group)
 - `public/` - Static assets
+
+### Route Groups
+The app uses Next.js route groups to separate the two applications:
+
+**Client App** (`/`) - Customer storefront
+- `/` - Home page
+- `/products` - Product listing
+- `/products/[id]` - Product detail
+- `/cart` - Shopping cart
+- `/checkout` - Checkout flow
+
+**Admin App** (`/admin`) - Dashboard
+- `/admin` - Dashboard
+- `/admin/products` - Product management
+- `/admin/products/new` - Add product
+- `/admin/products/[id]` - Edit product
+- `/admin/orders` - Order management
+- `/admin/orders/[id]` - Order detail
+- `/admin/customers` - Customer management
+- `/admin/customers/[id]` - Customer detail
 
 ### Path Aliases
 - `@/*` maps to the project root (e.g., `@/app/page.tsx`)
